@@ -1,0 +1,113 @@
+/* Estilos para o cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos igualmente ao longo do eixo principal (horizontalmente) */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    padding: 10px 0; /* Espaçamento interno */
+}
+
+.logo img {
+    max-width: 100px; /* Ajusta a largura máxima da logo */
+}
+
+.search-form,
+.login-form {
+    display: flex;
+    margin-left: 10px; /* Espaçamento entre os formulários */
+    
+}
+.login-form, .cadastro-link{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.search-form input[type="text"],
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 5px; /* Espaçamento interno dos campos de texto */
+    margin-right: 5px; /* Espaçamento entre os campos de texto */
+}
+
+.search-form button,
+.login-form button {
+    padding: 5px 10px; /* Espaçamento interno do botão */
+    background-color: #333; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Altera o cursor ao passar o mouse sobre o botão */
+}
+
+.cadastro-link,
+.carrinho-link {
+    padding: 5px 10px; /* Espaçamento interno do link */
+    background-color: #333; /* Cor de fundo do link */
+    color: #fff; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+}
+
+.cadastro-link:hover,
+.carrinho-link:hover {
+    background-color: #555; /* Cor de fundo do link ao passar o mouse */
+}
+
+body {
+    background-color: #222;
+    color: #eee;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #fff;
+}
+
+.ebook-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.ebook {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.ebook a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ebook a:hover {
+    text-decoration: underline;
+}
+
+.carrinho table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.carrinho th, .carrinho td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.carrinho th {
+    background-color: #333;
+    color: #fff;
+}
+
+.carrinho td {
+    background-color: #555;
+}
+
+.carrinho input[type="number"] {
+    width: 50px;
+}
+
